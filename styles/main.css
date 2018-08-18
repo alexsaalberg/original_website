@@ -9,10 +9,13 @@ body {
 	background: #EBFEFF;
 	font-size: 100%;
 	text-rendering: optimizeLegibility;
+  background-size: 115vmax;
+}
+
+.main_page {
   background-image: url("../images/background_opt.jpg");
   background-blend-mode: hard-light;
   background-color: rgba(128, 128, 128, 0.9);
-  background-size: 115vmax;
 }
 
 .bio {
@@ -31,11 +34,26 @@ body {
   margin: auto;
 }
 
+.download_box {
+  padding: 20px 0;
+  margin: auto;
+  width: 20vw;
+  border: 2px solid #000000;
+  border-style: solid;
+  color: #386DE8;
+}
+
+.download_box a {
+  text-align: center;
+  color: #000000;
+  display: block;
+}
+
 /* avatar */
 .avatar {
   margin: auto;
-  width: 85vmin;
-  height: 85vmin;
+  width: 80vmin;
+  height: 80vmin;
   position: relative;
   overflow: hidden;
   border-radius: 50%;
