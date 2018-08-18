@@ -9,9 +9,26 @@ body {
 	background: #EBFEFF;
 	font-size: 100%;
 	text-rendering: optimizeLegibility;
-  background-image: url("../images/background.jpg");
-  background-color: #cccccc; 
+  background-image: url("../images/background_opt.jpg");
+  background-blend-mode: hard-light;
+  background-color: rgba(128, 128, 128, 0.9);
   background-size: 115vmax;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.bio h1 {
+  margin: auto;
+  font-size: 300%;
+}
+
+.bio p {
+  margin: auto;
 }
 
 /* avatar */
@@ -29,13 +46,11 @@ body {
  
 .avatar img {
   display: block;
-  /*margin: 0 auto; */
-  margin-left: -35%; //centers the image
-  margin-bottom: -80%;
-  max-width: 130vmin;
-  max-height: 130vmin;
+  /*margin-left: -10%; //centers the image */
+  max-width: 100vmin;
+  max-height: 100vmin;
   height: auto;
-  width: auto;
+  width: 100%;
 }
 
 /* navbar */
