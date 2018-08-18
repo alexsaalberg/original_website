@@ -6,24 +6,40 @@ body {
 	margin:0;
 	padding:0;
 	color: #000;
-	background: #fff8e5;
+	background: #dadfd5;
 	font-size: 100%;
 	text-rendering: optimizeLegibility;
 }
 
-.navbar {
-  background-color: #333;
+.avatar {
+  width: 20vw;
+  height: 20vw;
+  position: relative;
   overflow: hidden;
+  border-radius: 50%;
+}
+
+.avatar img {
+  margin: 0 auto;
+  margin-left: -25%; //centers the image
+  height: 100%;
+  width: auto;
+}
+
+.navbar {
+  background-color: #33300F;
+  overflow: hidden;
+  font-family: Verdana, Geneva, sans-serif;
 }
 
 .navbar a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #f3f3f3;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .navbar a:hover {
@@ -32,7 +48,7 @@ body {
 }
 
 .navbar .active {
-    background-color: #4CAF50;
+    background-color: #4DA4D4;
     color: white;
 }
 
