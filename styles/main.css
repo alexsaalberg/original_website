@@ -6,28 +6,31 @@ body {
 	margin:0;
 	padding:0;
 	color: #000;
-	background: #dadfd5;
+	background: #EBFEFF;
 	font-size: 100%;
 	text-rendering: optimizeLegibility;
 }
 
 /* avatar */
 .avatar {
-  width: 50vw;
-  height: 50vw;
+  margin: auto;
+  width: 85vmin;
+  height: 85vmin;
   position: relative;
   overflow: hidden;
   border-radius: 50%;
   object-fit: scale-down;
+  border: 5px solid #000000;
+  border-style: double;
 }
  
 .avatar img {
   display: block;
   /*margin: 0 auto; */
-  margin-left: -30%; //centers the image
+  margin-left: -35%; //centers the image
   margin-bottom: -80%;
-  max-width: 75vw;
-  max-height: 75vw;
+  max-width: 130vmin;
+  max-height: 130vmin;
   height: auto;
   width: auto;
 }
