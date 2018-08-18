@@ -9,6 +9,9 @@ body {
 	background: #EBFEFF;
 	font-size: 100%;
 	text-rendering: optimizeLegibility;
+  background-image: url("../images/background.jpg");
+  background-color: #cccccc; 
+  background-size: 115vmax;
 }
 
 /* avatar */
@@ -20,8 +23,8 @@ body {
   overflow: hidden;
   border-radius: 50%;
   object-fit: scale-down;
-  border: 5px solid #000000;
-  border-style: double;
+  border: 1vmin solid #000000;
+  border-style: solid;
 }
  
 .avatar img {
