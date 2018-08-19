@@ -54,44 +54,68 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  
+  justify-content: center
+  align-items: center;
+
   font-family: Helvetica, Arial, sans-serif;
 }
 
+.email:before {
+    content: "admin";
+}
+
+.email:after {
+    content: "@example.com";
+}
 
 .game_cover {
   max-width: 400px;
   max-height: 300px;
+  width: 400px;
+  height: 300px;
   position: relative;
   text-align: center;
   color: white;
+
+  padding: 4px;
 }
 
 .game_cover img {
   position: relative;
-  top: 50%;
+  /*top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);*/
+  vertical-align: middle;
+
+  /*border: 5px solid #AAAAAA;*/
+  border-radius: 5px;
 
   display: block;
-  padding: 4px;
+  max-height: 100%;
   height: auto;
   width: 100%;
 }
 
 .game_cover_textbox {
   position: absolute;
+  
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
   padding: 8px;
 
+  pointer-events: none;
+
   background-color: rgba(55, 55, 55, 0.7);
 }
 
-.game_cover_text {
+.game_cover_year {
+
+}
+
+
+.game_cover_title {
   white-space: nowrap;
   font-size: 20pt;
 }
