@@ -10,6 +10,8 @@ body {
 	font-size: 100%;
 	text-rendering: optimizeLegibility;
   background-size: 115vmax;
+
+  font-family: Verdana, Geneva, sans-serif;
 }
 
 .main_page {
@@ -19,10 +21,7 @@ body {
 }
 
 .bio {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  font-family: Verdana, Geneva, sans-serif;
+  text-align: center;
 }
 
 .bio h1 {
@@ -47,6 +46,54 @@ body {
   text-align: center;
   color: #000000;
   display: block;
+}
+
+.gallery {
+  margin: auto;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+
+.game_cover {
+  max-width: 400px;
+  max-height: 300px;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.game_cover img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: block;
+  padding: 4px;
+  height: auto;
+  width: 100%;
+}
+
+.game_cover_textbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 8px;
+
+  background-color: rgba(55, 55, 55, 0.7);
+}
+
+.game_cover_text {
+  white-space: nowrap;
+  font-size: 20pt;
 }
 
 /* avatar */
