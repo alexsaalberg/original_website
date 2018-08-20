@@ -68,11 +68,51 @@ body {
     content: "@example.com";
 }
 
-.game_cover {
-  max-width: 400px;
+.game_page > .game_information {
+  grid-area: info;
+  padding: auto;
+  text-align: center;
+}
+
+.game_page > .gallery {
+  grid-area: gall;
+}
+
+.game_page {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: minmax(200px, auto);
+  grid-template-areas: 
+    "info info imag imag imag"
+    "info info imag imag imag"
+    "gall gall gall gall gall";
+}
+
+.game_video {
+  grid-area: imag;
+  margin: auto;
   max-height: 300px;
-  width: 400px;
-  height: 300px;
+  border: 5x solid #AAFF00;
+}
+
+.game_video iframe {
+  padding:auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .game_page {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 
+      "info"
+      "imag" 
+      "gall";
+  }
+}
+
+.gallery_element {
+  max-width: 400px;
+  max-height: auto;
   position: relative;
   text-align: center;
   color: white;
@@ -80,7 +120,7 @@ body {
   padding: 4px;
 }
 
-.game_cover img {
+.gallery_element img {
   position: relative;
   /*top: 50%;
   left: 50%;
@@ -98,7 +138,7 @@ body {
 
 .game_cover_textbox {
   position: absolute;
-  
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
