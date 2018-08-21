@@ -60,14 +60,6 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.email:before {
-    content: "admin";
-}
-
-.email:after {
-    content: "@example.com";
-}
-
 .game_page > .game_information {
   grid-area: info;
   padding: auto;
@@ -121,10 +113,7 @@ body {
 }
 
 .gallery_element img {
-  position: relative;
-  /*top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);*/
+  position: relative; 
   vertical-align: middle;
 
   /*border: 5px solid #AAAAAA;*/
@@ -149,11 +138,6 @@ body {
 
   background-color: rgba(55, 55, 55, 0.7);
 }
-
-.game_cover_year {
-
-}
-
 
 .game_cover_title {
   white-space: nowrap;
