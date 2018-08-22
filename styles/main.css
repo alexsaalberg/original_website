@@ -110,7 +110,7 @@ body {
   .game_page {
     grid-template-areas: none;
     grid-template-columns: 100vw;
-    grid-auto-rows: minmax(100%, 100vmin);
+    grid-auto-rows: minmax(100%, 100%);
     grid-template-areas:
       "info"
       "imag" 
