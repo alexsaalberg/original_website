@@ -9,12 +9,15 @@ body {
   background: #EBFEFF;
   font-size: 100%;
   text-rendering: optimizeLegibility;
-  background-size: 115vmax;
+
+  background-image: url("../images/oriental.png");
+  background-repeat: repeat;
 
   font-family: Verdana, Geneva, sans-serif;
 }
 
 .main_page {
+  background-size: 115vmax;
   background-image: url("../images/background_opt.jpg");
   background-blend-mode: hard-light;
   background-color: rgba(128, 128, 128, 0.9);
@@ -30,6 +33,7 @@ body {
   width: 20vw;
   border: 2px solid #000000;
   border-style: solid;
+  background-color: #ffffff;
   color: #386DE8;
 }
 
@@ -39,6 +43,11 @@ body {
   display: block;
 }
 
+.game_gallery {
+  grid-area: gall;
+  text-align: center;
+}
+
 .gallery {
   margin: auto;
   position: relative;
@@ -46,7 +55,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center
+  justify-content: center;
   align-items: center;
 
   font-family: Helvetica, Arial, sans-serif;
@@ -60,10 +69,15 @@ body {
   text-align: center;
 }
 
+.game_information h1 {
+  text-decoration: underline;
+}
+
 .game_description {
   width: 100%;
   padding: 0;
-  border: 5px solid #abcdef;
+  border: 5px solid #0f0f0f;
+  background-color: #f0f0f0  ;
 }
 
 .game_information p {
@@ -134,10 +148,22 @@ body {
 
   border: 5px solid #AAAAAA;
   border-radius: 5px;
+  background-color: #f0f0f0;
 
   display: block;
   height: auto;
   width: 100%;
+}
+
+.gallery_element p {
+  position: absolute;
+
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(55, 55, 55, 0.7);
+  width: 90%;
+  vertical-align: text-bottom;
 }
 
 .game_cover_textbox {
