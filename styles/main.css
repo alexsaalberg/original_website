@@ -24,15 +24,6 @@ body {
   text-align: center;
 }
 
-.bio h1 {
-  margin: auto;
-  font-size: 300%;
-}
-
-.bio p {
-  margin: auto;
-}
-
 .download_box {
   padding: 20px 0;
   margin: auto;
@@ -50,6 +41,7 @@ body {
 
 .gallery {
   margin: auto;
+  position: relative;
 
   display: flex;
   flex-direction: row;
@@ -61,9 +53,21 @@ body {
 }
 
 .game_page > .game_information {
+  position: relative;
   grid-area: info;
-  padding: auto;
+  padding: 5%;
+  width: 100%;
   text-align: center;
+}
+
+.game_description {
+  width: 100%;
+  padding: 0;
+  border: 5px solid #abcdef;
+}
+
+.game_information p {
+  padding: auto;
 }
 
 .game_page > .gallery {
@@ -72,30 +76,42 @@ body {
 
 .game_page {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   grid-auto-rows: minmax(200px, auto);
   grid-template-areas: 
-    "info info imag imag imag"
-    "info info imag imag imag"
-    "gall gall gall gall gall";
+    "info info info imag imag imag imag"
+    "info info info imag imag imag imag"
+    "gall gall gall gall gall gall gall";
+  padding: 5px;
+}
+
+.game_image {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+
+  grid-area: imag;
+  margin: auto;
 }
 
 .game_video {
-  grid-area: imag;
-  margin: auto;
-  max-height: 300px;
-  border: 5x solid #AAFF00;
-}
-
-.game_video iframe {
-  padding:auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 @media only screen and (max-width: 600px) {
   .game_page {
-    grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    grid-template-areas: 
+    grid-template-areas: none;
+    grid-template-columns: 100vw;
+    grid-auto-rows: minmax(100%, 100vmin);
+    grid-template-areas:
       "info"
       "imag" 
       "gall";
@@ -116,11 +132,10 @@ body {
   position: relative; 
   vertical-align: middle;
 
-  /*border: 5px solid #AAAAAA;*/
+  border: 5px solid #AAAAAA;
   border-radius: 5px;
 
   display: block;
-  max-height: 100%;
   height: auto;
   width: 100%;
 }
