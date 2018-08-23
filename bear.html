@@ -18,13 +18,77 @@
     </section>
   </header>
 
-  <br>
+  <section class="game_page">
+    <section class="game_information">
+      <h1>Kill The Bears</h1>
 
-  <section class="download_box">
-    <a download href="games/ktb/kill_the_bears.zip" target="_blank">Download Mac</a>
-    <br>
-    <a download href="games/ktb/kill_the_bears.exe" target="_blank">Download Win</a>
+      <div class = "game_description">
+        <p>
+          <ul>
+            <li>3D Voxel-Terrain, “Colony Management” video prototype</li>
+            <li>Created using C++ and OpenGL</li>
+            <li>Uses PolyVox library for 
+              <ul>
+                <li>Management of voxel data</li>
+                <li>Triangle mesh generation of voxels</li>
+                <li>aid in 3D pathfinding</li>
+              </ul> 
+            </li>
+            <li>Uses BulletPhysics library for player physics</li>
+          </ul>
+        </p>
+      </div>
+
+      <br>
+
+      <div class = "download_box">
+        <a download href="games/ktb/kill_the_bears.exe" target="_blank">
+          Download Not Available
+        </a>
+      </div>
+
+    </section>
+
+    <section class="game_image">
+      <iframe class="game_video" src="https://www.youtube.com/embed/srrBpUMm_rs" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </section>
+
+    <section class="game_gallery">
+      <h2>Screenshots</h2>
+      <section class="gallery">
+        <div class="gallery_element">
+          <img src="games/game_of_stones/gos1.png" alt="Demonstration of multiple block colors and selected colonist arrows.">
+          <p>Demonstration of multiple block colors as well as selection arrows for colonists.</p>
+        </div>
+
+        <div class="gallery_element">
+          <img src="games/game_of_stones/gos2.png" alt="Demonstration of multiple block colors and selected colonist arrows.">
+          <p>Small building.</p>
+        </div>
+
+        <div class="gallery_element">
+          <img src="games/game_of_stones/gos3.png" alt="Demonstration of multiple block colors and selected colonist arrows.">
+          <p>Glitchy view from underneath the terrain.</p>
+        </div>
+
+        <div class="gallery_element">
+          <img src="games/game_of_stones/gos4.png" alt="Demonstration of multiple block colors and selected colonist arrows.">
+          <p>Image from immediately after I got 'picking' to work. All the cubes are those placed by the mouse. The spikes in the background are the limit of the loaded terrain.</p>
+        </div>
+
+        <div class="gallery_element">
+          <img src="games/game_of_stones/gos5.png" alt="Demonstration of multiple block colors and selected colonist arrows.">
+          <p>Very early image from when I was trying to send voxel meshes to the GPU. All the vertices were accidently being rendered in a very small area leading to this spiky-looking object.</p>
+        </div>
+
+        <div class="gallery_element">
+          <img src="games/game_of_stones/gos7.png" alt="Demonstration of multiple block colors and selected colonist arrows.">
+          <p>Same as previous image.</p>
+        </div>
+      </section>
+    </section>
   </section>
+
 
 </body>
 

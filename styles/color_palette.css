@@ -1,0 +1,29 @@
+
+body {
+	/* primary color (lightest to darkest) probably black */
+	--mainColor_light_light: #606060;
+	--mainColor_light: #404040;
+	--mainColor: #262626;
+	--mainColor_dark: #0d0d0d;
+	/* secondary color (lightest to darkest) probably white */
+	--secColor_light: #f2f2f2;
+	--secColor: #d9d9d9;
+	--secColor_dark: #bfbfbf;
+	--secColor_dark_50opacity: rgba(180,180,180, 0.5);
+	--secColor_dark_25opacity: rgba(180,180,180, 0.25);
+	/* highlight color (lightest to darkest) probably blue */
+	--highColor_light: #66d9ff;
+	--highColor: #00bfff;
+	--highColor_dark: #007399;
+
+	/* colors to use (you can use the above ones too) */
+	--textColor_light: var(--mainColor_light_light);
+	--textColor_main: var(--mainColor_light); /*main text color*/
+	--textColor_dark: var(--mainColor);
+	--textColor_invert: var(--secColor_light);
+	--textColor_links: var(--highColor_dark); /*text color for links*/
+	--backgroundColor: var(--secColor_dark);
+	--backgroundColor_50opacity: var(--secColor_dark_50opacity);
+	--backgroundColor_25opacity: var(--secColor_dark_25opacity);
+	--borderColor: var(--mainColor_light);
+}
