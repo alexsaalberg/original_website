@@ -24,13 +24,13 @@ body {
 
   font-family: Verdana, Geneva, sans-serif;
 }
-
+/*
 .main_page {
   background-size: 115vmax;
   background-image: url("../images/background_opt.jpg");
   background-blend-mode: hard-light;
   background-color: rgba(128, 128, 128, 0.9);
-}
+}*/
 
 .bio {
   text-align: center;
